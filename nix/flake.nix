@@ -17,5 +17,5 @@
     modules = [
       ./software/git.nix
     ];
-  }
+  };
 }
