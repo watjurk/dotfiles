@@ -12,10 +12,11 @@
     nix-darwin,
     nixpkgs,
   }: {
-    darwinConfigurations."macbook-pro-2020" = nixpkgs.lib.darwinSystem {
-    system = "aarch64-darwin";
-    modules = [
-      ./software/git.nix
-    ];
+      darwinConfigurations."macbook-pro-2020" = nixpkgs.lib.darwinSystem {
+      system = "aarch64-darwin";
+      modules = [
+        ./software/git.nix
+      ];
+    };
   };
 }
